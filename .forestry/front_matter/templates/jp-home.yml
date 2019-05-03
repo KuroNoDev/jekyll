@@ -1,0 +1,32 @@
+---
+label: jp-home
+hide_body: false
+fields:
+- type: text
+  name: layout
+  label: Layout
+  description: Sets the Page Layout
+  default: jp-home
+- type: include
+  template: jp-page
+  label: Default
+  name: default
+- type: include
+  template: history
+  label: History
+  name: history
+- type: include
+  template: ads
+  label: Ads
+  name: ads
+- type: include
+  template: cards
+  label: How Tos
+  name: cards
+- name: variants_collection
+  type: include
+  config: {}
+  template: variants-collection
+  label: Variants Collection
+pages:
+- _jp_pages/index.md

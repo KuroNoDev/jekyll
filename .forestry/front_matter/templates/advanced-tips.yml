@@ -1,0 +1,18 @@
+---
+label: Advanced Tips
+hide_body: false
+fields:
+- type: field_group
+  name: advanced_tips
+  label: advanced tips
+  description: A list of advanced tips. Good, neutral or bad
+  fields:
+  - type: list
+    name: good
+    label: good
+  - type: list
+    name: neutral
+    label: neutral
+  - type: list
+    name: bad
+    label: bad

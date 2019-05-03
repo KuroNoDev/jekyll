@@ -1,0 +1,66 @@
+---
+label: jp-casino
+hide_body: false
+fields:
+- type: text
+  name: layout
+  label: Layout
+  description: Sets the Page Layout
+  default: jp-casino
+- type: include
+  template: jp-page
+  label: Default
+  name: default
+- type: field_group_list
+  name: how_to_rate_cards
+  label: How we rate cards
+  fields:
+  - type: file
+    name: image
+    label: Image
+  - type: text
+    name: label
+    label: Label
+  - type: text
+    name: content
+    label: Content
+- type: field_group_list
+  name: how_to_choose_cards
+  label: How to choose casino cards
+  fields:
+  - type: file
+    name: image
+    label: Image
+  - type: text
+    name: label
+    label: Label
+  - type: text
+    name: content
+    label: Content
+  - type: color
+    name: color
+    label: Color
+    config:
+      color_format: Hex
+- type: field_group_list
+  name: ads_1
+  label: Ad banners 1
+  fields:
+  - type: file
+    name: image
+    label: Image
+  - type: text
+    name: url
+    label: Url
+- type: field_group_list
+  name: ads_2
+  label: Ad banners 2
+  fields:
+  - type: file
+    name: image
+    label: Image
+  - type: text
+    name: url
+    label: Url
+pages:
+- _jp_pages/casino.md

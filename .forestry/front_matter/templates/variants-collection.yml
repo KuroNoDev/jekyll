@@ -1,0 +1,25 @@
+---
+label: variants_collection
+hide_body: false
+fields:
+- type: field_group_list
+  name: variants_collection
+  label: Variants Collection
+  description: Variants cards collection
+  fields:
+  - type: text
+    name: title
+    label: Title
+    description: Title of card
+  - type: text
+    name: label
+    label: Label
+    description: Label for image
+  - type: text
+    name: icon
+    label: Icon
+    description: Icon of card
+  - type: text
+    name: description
+    label: Description
+    description: Description of card

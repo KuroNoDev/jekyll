@@ -1,0 +1,41 @@
+---
+label: Game Variant
+hide_body: false
+fields:
+- type: include
+  template: page
+  label: Default
+  name: default
+- type: text
+  name: layout
+  label: Layout
+  description: Sets the Page Layout
+  default: game
+- type: list
+  name: table_of_contents
+  label: Table of Contents
+  description: A list of page sections for on-page navigation
+- type: include
+  template: toplist
+  label: Toplist
+  name: toplist
+- type: include
+  template: author
+  label: Author
+  name: author
+- type: include
+  template: faq
+  label: FAQ
+  name: faq
+- type: include
+  template: trivia
+  label: Trivia
+  name: trivia
+- type: include
+  template: tips
+  label: Tips
+  name: tips
+pages:
+- _game/baccarat-chemin-de-fer-werden-sie-mit-unserer-anleitung-zum-gewinner.md
+- _game/baccarat-banque-leicht-gemacht-hier-erfahren-sie-die-besten-strategien.md
+- _game/mini-baccarat-muss-nicht-mini-gewinne-bedeuten-erfahren-sie-jetzt-mehr.md

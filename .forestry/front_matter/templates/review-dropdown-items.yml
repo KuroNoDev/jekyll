@@ -1,0 +1,17 @@
+---
+label: review-dropdown-items
+hide_body: true
+fields:
+- type: boolean
+  name: has_review_dropdown
+  label: Show Review Dropdown
+- type: field_group_list
+  name: review_dropdown_items
+  label: Review Dropdown Items
+  fields:
+  - type: text
+    name: category
+    label: Category
+  - type: text
+    name: content
+    label: Content

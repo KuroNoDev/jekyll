@@ -1,0 +1,12 @@
+---
+label: breadcrumb
+hide_body: false
+fields:
+- type: boolean
+  name: show_breadcrumb
+  label: Show Breadcrumb
+  description: Toggles Breadcrumb element visibility
+- type: text
+  name: breadcrumb_title
+  label: Breadcrumb Title
+  description: Custom Page title for breadcrrumb

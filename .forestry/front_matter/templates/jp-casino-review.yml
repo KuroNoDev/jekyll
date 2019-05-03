@@ -1,0 +1,195 @@
+---
+label: jp-casino-review
+hide_body: false
+fields:
+- type: text
+  name: layout
+  label: Layout
+  description: Sets the Page Layout
+  default: jp-casino-review
+- type: include
+  template: jp-page
+  label: Default
+  name: default
+- type: include
+  template: information-tabs
+  label: Information Tabs
+  name: information-tabs
+- type: text
+  name: name
+  label: Name
+  description: Short name
+- type: file
+  name: image
+  label: Image
+- type: field_group
+  name: review
+  label: Casino Review
+  fields:
+  - type: text
+    name: description
+    label: Description
+  - type: text
+    name: go_folder
+    label: Go Folder
+  - type: number
+    name: rating
+    label: Rating
+    config:
+      min: '0'
+      max: '5'
+    default: '0'
+  - type: field_group_list
+    name: levels
+    label: Levels
+    fields:
+    - type: text
+      name: label
+      label: Label
+    - type: text
+      name: value
+      label: Value
+- type: field_group
+  name: bonus
+  label: Bonus
+  fields:
+  - type: text
+    name: label
+    label: Label
+  - type: field_group_list
+    name: steps
+    label: Steps
+    fields:
+    - type: boolean
+      name: get
+      label: Get bonus?
+    - type: text
+      name: label
+      label: Label
+- type: field_group
+  name: exclusive_bonus
+  label: Exclusive Bonus
+  fields:
+  - type: text
+    name: no_bonus
+    label: No bonus
+  - type: text
+    name: with_bonus
+    label: With bonus
+  - type: number
+    name: free_amount
+    label: Free amount
+    config:
+      min: '0'
+    default: '0'
+  - type: number
+    name: deposit_bonus
+    label: Deposit Bonus
+    config:
+      min: '0'
+    default: '0'
+  - type: text
+    name: code
+    label: Code
+  - type: text
+    name: valid_until
+    label: Valid Until
+  - type: field_group
+    name: ad
+    label: Ad
+    fields:
+    - type: file
+      name: image
+      label: Image
+    - type: text
+      name: url
+      label: Url
+- type: field_group_list
+  name: support_cards
+  label: Support cards
+  fields:
+  - type: file
+    name: image
+    label: Image
+  - type: text
+    name: label
+    label: Label
+  - type: text
+    name: content
+    label: Content
+- type: field_group
+  name: player_experience
+  label: Player Experience
+  fields:
+  - type: file
+    name: image
+    label: Image
+  - type: field_group_list
+    name: levels
+    label: Levels
+    fields:
+    - type: text
+      name: label
+      label: Label
+    - type: text
+      name: value
+      label: Value
+  - type: number
+    name: rating
+    label: Rating
+    config:
+      min: '0'
+      max: '5'
+    default: '0'
+  - type: text
+    name: description
+    label: Description
+- type: field_group_list
+  name: signup_cards
+  label: Signup Cards
+  fields:
+  - type: file
+    name: image
+    label: Image
+  - type: text
+    name: label
+    label: Label
+  - type: text
+    name: content
+    label: Content
+  - type: color
+    name: color
+    label: Color
+    config:
+      color_format: Hex
+- type: field_group_list
+  name: payment_cards
+  label: Payment Cards
+  fields:
+  - type: file
+    name: image
+    label: Image
+  - type: text
+    name: label
+    label: Label
+  - type: text
+    name: content
+    label: Content
+- type: field_group_list
+  name: Lizenz_cards
+  label: Lizenz cards
+  fields:
+  - type: file
+    name: image
+    label: Image
+  - type: text
+    name: label
+    label: Label
+  - type: text
+    name: content
+    label: Content
+pages:
+- _jp_casinos/casino-review-5.md
+- _jp_casinos/casino-review-4.md
+- _jp_casinos/casino-review.md
+- _jp_casinos/casino-review 2.md

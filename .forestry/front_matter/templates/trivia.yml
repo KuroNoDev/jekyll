@@ -1,0 +1,25 @@
+---
+label: trivia
+hide_body: true
+fields:
+- type: field_group
+  name: trivia
+  label: Trivia
+  description: On-page trivia properties.
+  fields:
+  - type: boolean
+    name: show_trivia
+    label: Show Trivia
+    description: Toggle trivia page visibility
+  - type: text
+    name: trivia_title
+    label: Trivia Title
+    description: Trivia title for page component.
+  - type: textarea
+    label: Trivia Content
+    name: trivia_content
+    description: Content for trivia
+    config:
+      wysiwyg: true
+      schema:
+        format: markdown

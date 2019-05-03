@@ -1,0 +1,234 @@
+---
+label: settings
+hide_body: true
+fields:
+- type: text
+  name: title
+  label: Title
+  description: Site Title
+  config:
+    required: true
+- type: text
+  name: tagline
+  label: Tagline
+  description: Site Tagline
+  config:
+    required: true
+- type: textarea
+  name: description
+  label: Description
+  description: Site Description
+  config:
+    required: true
+    wysiwyg: false
+    schema:
+      format: markdown
+- type: text
+  name: language
+  label: Language
+  description: Website's default Language
+  config:
+    required: true
+  default: en
+- type: list
+  name: locales
+  label: Locales
+  description: Site's available Locales
+  config:
+    use_select: false
+    source:
+      type: datafiles
+  default:
+  - en
+- type: file
+  name: header_brand
+  label: Header Brand Logo
+  description: A brand logo image for Header
+  config:
+    maxSize: '0.5'
+- type: file
+  name: footer_brand
+  label: Footer Brand Logo
+  description: A brand logo image for Footer
+  config:
+    maxSize: '0.5'
+- type: file
+  name: backdrop_image
+  label: Backdrop Image
+  description: Site wide background Image
+  config:
+    maxSize: '0.5'
+- type: field_group
+  label: Social Media Links and Icons
+  name: social
+  description: Social Media Links
+  fields:
+  - type: field_group_list
+    fields:
+    - type: text
+      label: Label
+      name: label
+      description: Social Media Label
+    - type: text
+      label: Link
+      name: link
+      description: Social Media Link
+    - type: text
+      label: Icon
+      name: icon
+      description: Social Media Icon. utilises Fontawesome css class names, e.g.,
+        twitter-square
+    label: 'Social Media '
+    name: items
+- type: field_group
+  name: trusted_badges
+  label: Trusted Badges
+  description: A list of Trusted badges to goes in the footer.
+  fields:
+  - type: field_group_list
+    name: items
+    label: Items
+    description: A list of trusted badges
+    fields:
+    - type: text
+      name: label
+      label: Trusted Badge Label
+      description: A label's pretty format.
+    - type: text
+      name: link
+      label: Trusted Badge Link
+      description: A hyperlink to the trusted badge.
+    - type: file
+      name: image
+      label: Trusted Badge Image
+      description: An image-log of the trusted badge
+- type: field_group
+  name: google_integration
+  label: 'Google Apps Integration '
+  description: Google Plugins Integrations
+  fields:
+  - type: field_group
+    label: Analytics
+    name: analytics
+    description: Google Analytics
+    fields:
+    - type: boolean
+      name: enable
+      label: Enable
+      description: Toggles Google Analytics Functionality
+    - type: text
+      name: trackid
+      label: Tracking ID
+      description: Google Analytics Tracking ID
+  - type: field_group
+    label: Tag Manager
+    name: tagmanager
+    description: Google Tag Manager
+    fields:
+    - type: boolean
+      name: enable
+      label: Enable
+      description: Toggle TagManager feature on/off
+    - type: text
+      label: Container ID
+      name: containerid
+      description: TagManager Container ID
+  - type: field_group
+    label: Maps
+    name: maps
+    description: Google Maps Integration
+    fields:
+    - type: boolean
+      label: Enable
+      name: enable
+      description: Toggle Google  Maps on/off
+  - type: field_group
+    name: webmaster
+    label: Webmaster
+    description: Google Webmaster Tools
+    fields:
+    - type: boolean
+      label: Enable
+      name: enable
+      description: Enable Site Verification
+    - type: text
+      name: site_verification
+      label: Site Verification
+      description: Webmaster Verification Code
+- type: field_group
+  label: Web Manifest
+  name: manifest
+  description: Web Manifest (Progressive Web App)
+  fields:
+  - type: text
+    name: name
+    label: Name
+    description: Site Name
+  - type: text
+    name: short_name
+    label: Short Name
+    description: Must be less than 12 characters
+  - type: text
+    name: language
+    label: Language
+    description: Site's default language
+  - type: field_group
+    label: Icons
+    name: icons
+    description: Icon sizes that targets a specific device and/or operating system
+    fields:
+    - type: file
+      name: src
+      label: Image Source
+      description: Image URL or Path location within the project.
+      config:
+        maxSize: '0.5'
+    - type: text
+      name: size
+      label: Image Size
+      description: Accurate image dimension in pixels
+- type: field_group
+  name: browserconfig
+  label: Browserconfig
+  description: Browser config to target Microsoft products and search info.
+  fields:
+  - type: text
+    name: key
+    label: Image Name
+    description: Image's name e.g., square150x150logo
+  - type: file
+    label: Image Source
+    name: src
+    description: Image URL or Location path within the project.
+    config:
+      maxSize: '0.5'
+- type: textarea
+  config:
+    wysiwyg: false
+    schema:
+      format: markdown
+  label: Robots Text
+  name: robotstxt
+  default: "# www.robotstxt.org/  \n# Allow crawling of all content  \nUser-agent:
+    *\nDisallow: /"
+  description: Robots, These are for search engine robots. yah.
+- type: textarea
+  name: humanstxt
+  label: Humans Text
+  description: It's like Robots.txt but for Humans
+  config:
+    wysiwyg: false
+    schema:
+      format: markdown
+  default: "# humanstxt.org/  \n# The humans responsible & technology colophon  \n#
+    TEAM\n\n<name> -- <role> -- <twitter>\n\n# THANKS  \n<name>"
+- type: text
+  label: Go Folder
+  name: go_folder
+  description: MicroService Endpoint for GoFolder
+  default: https://go.baccarat.com.de/
+- type: boolean
+  name: show_toplist
+  label: Show Toplist
+pages:
+- _data/settings.yaml

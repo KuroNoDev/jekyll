@@ -1,0 +1,53 @@
+---
+label: Strategy
+hide_body: false
+fields:
+- type: include
+  template: page
+  label: Default
+  name: default
+- type: text
+  name: layout
+  label: Layout
+  description: Sets the Page Layout
+  default: strategy
+- type: include
+  template: toplist
+  label: Toplist
+  name: toplist
+- type: include
+  template: tips
+  label: Tips
+  name: tips
+- type: include
+  template: advanced-tips
+  label: Advanced Tips
+  name: advanced-tips
+- type: include
+  template: trivia
+  label: Trivia
+  name: trivia
+- type: include
+  template: author
+  label: Author
+  name: author
+- type: include
+  template: faq
+  label: FAQ
+  name: faq
+- type: include
+  template: bottom-collection
+  label: Bottom Collection
+  name: bottom-collection
+pages:
+- _strategy/7-baccarat-wettsysteme-die-wirklich-funktionieren-ihr-ratgeber-fur-2018.md
+- _strategy/7-baccarat-wettsysteme-die-wirklich-funktionieren-ihr-ratgeber-fur-2019-1.md
+- _strategy/baccarat-glossar-mit-allen-baccara-begriffen-erklarungen-auf-einen-blick.md
+- _strategy/7-baccarat-wettsysteme-die-wirklich-funktionieren-ihr-ratgeber-fur-2019.md
+- _strategy/baccarat-tipps-top-23-erprobte-baccarat-tricks-kniffe-fur-ihren-erfolg.md
+- baccarat-gewinner-gehen-sie-hier-in-die-geschichte-des-baccarat-ein.md
+- _strategy/baccarat-regeln-lernen-verstehen-hier-werden-sie-zum-baccarat-profi.md
+- _kartenspiele/kartenspiele.md
+- _kartenspiele/traditionelle-kartenspiele-welche-sind-beliebt-wo-spiele-ich-sie.md
+- _kartenspiele/online-blackjack-die-besten-blackjack-strategien-und-online-casinos.md
+- _kartenspiele/die-besten-skat-strategien-mit-dieser-anleitung-werden-sie-gewinnen.md

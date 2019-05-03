@@ -1,0 +1,97 @@
+---
+label: jp-guides
+hide_body: false
+fields:
+- type: text
+  name: layout
+  label: Layout
+  description: Sets the Page Layout
+  default: jp-guides
+- type: include
+  template: jp-page
+  label: Default
+  name: default
+- type: field_group_list
+  name: how_baccarat_works_cards
+  label: How baccarat works cards
+  fields:
+  - type: file
+    name: image
+    label: Image
+  - type: text
+    name: label
+    label: Label
+  - type: text
+    name: content
+    label: Content
+  - type: color
+    name: color
+    label: Color
+    config:
+      color_format: Hex
+- type: field_group_list
+  name: baccarat_rules_cards
+  label: Baccarat rules cards
+  fields:
+  - type: file
+    name: image
+    label: Image
+  - type: text
+    name: label
+    label: Label
+  - type: text
+    name: content
+    label: Content
+  - type: color
+    name: color
+    label: Color
+    config:
+      color_format: Hex
+- type: field_group_list
+  name: how_to_win_cards
+  label: How to win cards
+  fields:
+  - type: file
+    name: image
+    label: Image
+  - type: text
+    name: label
+    label: Label
+  - type: text
+    name: content
+    label: Content
+  - type: color
+    name: color
+    label: Color
+    config:
+      color_format: Hex
+- type: field_group_list
+  name: how_to_play_cards
+  label: How to play cards
+  fields:
+  - type: file
+    name: image
+    label: Image
+  - type: text
+    name: label
+    label: Label
+  - type: text
+    name: content
+    label: Content
+  - type: color
+    name: color
+    label: Color
+    config:
+      color_format: Hex
+- type: field_group_list
+  name: ads
+  label: Ad banners
+  fields:
+  - type: file
+    name: image
+    label: Image
+  - type: text
+    name: url
+    label: Url
+pages:
+- _jp_guides/guide.md

@@ -1,0 +1,112 @@
+---
+label: default
+hide_body: false
+fields:
+- type: field_group_list
+  name: meta
+  label: Meta
+  description: Custom Page Meta Tags
+  fields:
+  - type: text
+    name: name
+    label: Name
+    description: Tag name
+  - type: text
+    name: content
+    label: Content
+    description: Tag content
+- type: text
+  name: layout
+  label: Layout
+  description: Sets the Page Layout
+- type: text
+  name: permalink
+  label: Permalink
+  description: Override the page's default URL by assigning a specific one
+- type: field_group
+  name: related_permalink
+  label: Related Permalink
+  fields:
+  - type: text
+    name: jp
+    label: JP
+    default: "/jp/"
+- type: text
+  name: title
+  label: Title
+  description: Page Title
+  config:
+    required: true
+- type: textarea
+  label: Meta Description
+  name: description
+  description: 'Meta Page Description, limit it to 120-158 characters. '
+  config:
+    wysiwyg: false
+    schema:
+      format: markdown
+    required: true
+- type: tag_list
+  name: keywords
+  label: Meta Keywords
+  description: Page's Meta Keywords
+- type: file
+  name: image
+  label: Image
+  description: Page's hero screenshot or Featured image.
+  config:
+    maxSize: '0.5'
+- type: include
+  name: sub_menus
+  label: Sub Menus
+  template: sub-menus
+- type: text
+  name: headline
+  label: Headline
+  description: Content Headline
+- type: text
+  name: headline_lead
+  label: Headline Lead
+  description: Headline Leading Paragraph
+- type: textarea
+  name: headline_content
+  label: Headline Content
+  description: Content to the headline
+  config:
+    wysiwyg: true
+    schema:
+      format: markdown
+- type: include
+  template: breadcrumb
+  label: Breadcrumb
+  name: breadcrumb
+  description: Breadcrumb Component Option
+- type: boolean
+  name: advertise
+  label: Show Advertisements
+  description: Toggle Advertisement Channels
+- type: list
+  name: table_of_contents
+  label: Table of Contents
+  description: A list of page sections for on-page navigation/
+- type: boolean
+  name: favourite_pages
+  label: Show Favourite Pages
+  description: Toggle Favourite Pages Component visibility.
+- type: field_group_list
+  name: favourite_pages_list
+  label: Favourite Page List
+  description: A list of favourite pages labels and hyperlinks
+  fields:
+  - type: text
+    name: label
+    label: Label
+    description: Favourite Page pretty name.
+  - type: text
+    name: link
+    label: Favourite Page Hyperlink
+    description: A hyperlink to pointing to the page.
+- type: include
+  template: bottom-toplist
+  label: Bottom Toplist
+  name: bottom-toplist

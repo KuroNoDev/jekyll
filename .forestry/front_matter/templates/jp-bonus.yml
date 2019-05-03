@@ -1,0 +1,60 @@
+---
+label: jp-bonus
+hide_body: false
+fields:
+- type: text
+  name: layout
+  label: Layout
+  description: Sets the Page Layout
+  default: jp-bonus
+- type: include
+  template: jp-page
+  label: Default
+  name: default
+- type: include
+  template: tips
+  label: Tips
+  name: tips
+- type: field_group_list
+  name: bonus_types_cards
+  label: Bonus Types cards
+  fields:
+  - type: file
+    name: image
+    label: Image
+  - type: text
+    name: label
+    label: Label
+  - type: text
+    name: content
+    label: Content
+- type: field_group_list
+  name: best_bonus_cards
+  label: Best Bonus Cards
+  fields:
+  - type: file
+    name: image
+    label: Image
+  - type: text
+    name: label
+    label: Label
+  - type: text
+    name: content
+    label: Content
+  - type: color
+    name: color
+    label: Color
+    config:
+      color_format: Hex
+- type: field_group_list
+  name: ads
+  label: Ad banners
+  fields:
+  - type: file
+    name: image
+    label: Image
+  - type: text
+    name: url
+    label: Url
+pages:
+- _jp_pages/bonus.md

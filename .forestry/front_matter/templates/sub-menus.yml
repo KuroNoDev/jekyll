@@ -1,0 +1,14 @@
+---
+label: Sub Menus
+hide_body: true
+fields:
+- type: field_group_list
+  label: Sub Menus
+  name: sub_menus
+  fields:
+  - type: text
+    name: title
+    label: Title
+  - type: text
+    name: url
+    label: Url

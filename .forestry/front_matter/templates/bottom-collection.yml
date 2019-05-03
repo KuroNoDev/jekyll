@@ -1,0 +1,12 @@
+---
+label: bottom_collection
+hide_body: false
+fields:
+- type: boolean
+  name: show_bottom_collection
+  label: Show Bottom Collection
+  description: Toggles Bottom Collection visibility
+- type: text
+  name: bottom_collection_header
+  label: Bottom Collection Header
+  description: Header for the bottom collection

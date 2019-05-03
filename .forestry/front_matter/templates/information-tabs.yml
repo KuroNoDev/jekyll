@@ -1,0 +1,50 @@
+---
+label: Information Tabs
+hide_body: false
+fields:
+- type: field_group
+  name: columns
+  label: Casino Information Tabs
+  fields:
+  - type: field_group_list
+    name: casino_information
+    label: Casino Information
+    fields:
+    - type: text
+      name: property
+      label: Property
+    - type: text
+      name: value
+      label: Value
+    - type: boolean
+      name: is_array
+      label: Is Array?
+      description: Determines if the value will be split by commas
+  - type: field_group_list
+    name: payments
+    label: Payments
+    fields:
+    - type: text
+      name: property
+      label: Property
+    - type: text
+      name: value
+      label: Value
+    - type: boolean
+      name: is_array
+      label: Is Array?
+      description: Determines if the value will be split by commas
+  - type: field_group_list
+    name: software
+    label: Software
+    fields:
+    - type: text
+      name: property
+      label: Property
+    - type: text
+      name: value
+      label: Value
+    - type: boolean
+      name: is_array
+      label: Is Array?
+      description: Determines if the value will be separated by commas

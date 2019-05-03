@@ -1,0 +1,23 @@
+---
+label: How Tos
+hide_body: true
+fields:
+- type: field_group_list
+  name: how_tos
+  label: How Tos
+  description: How to colored cards
+  fields:
+  - type: file
+    name: image
+    label: Image
+  - type: text
+    name: label
+    label: Label
+  - type: text
+    name: content
+    label: Content
+  - type: color
+    name: color
+    label: Color
+    config:
+      color_format: Hex

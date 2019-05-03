@@ -1,0 +1,136 @@
+---
+label: toplist
+hide_body: true
+fields:
+- type: boolean
+  name: show_toplist
+  label: Show Toplist
+  description: This option toggles toplist widget
+- type: field_group
+  name: toplist
+  label: Casino TopList
+  description: 'A detailed information about a casino. '
+  fields:
+  - type: text
+    label: Name
+    name: name
+    description: Casino Name
+    config:
+      required: false
+  - type: text
+    name: badge
+    label: Badge
+    description: Casino Badge Category
+  - type: file
+    name: image
+    label: Image
+    description: Casino TopList Image
+    config:
+      maxSize: '0.5'
+  - name: website
+    label: Website
+    type: text
+    hidden: false
+    default: ''
+  - type: number
+    name: rating
+    label: Rating
+    config:
+      min: '0'
+      max: '5'
+    default: '0'
+  - type: field_group
+    name: levels
+    label: Levels
+    description: Bar levels
+    fields:
+    - name: a
+      label: Bonus
+      type: text
+      default: '0'
+    - name: b
+      label: Spielangebot
+      type: text
+      default: '0'
+    - name: c
+      label: Live Casino
+      type: text
+      default: '0'
+    - name: d
+      label: Vip
+      type: text
+      default: '0'
+    - name: e
+      label: Kundenservice
+      type: text
+      default: '0'
+  - name: bonus_value
+    label: Bonus value
+    type: text
+    hidden: false
+    default: ''
+  - name: signup_bonus
+    label: Signup bonus
+    type: text
+    hidden: false
+    default: ''
+  - name: key_features
+    label: Key features
+    type: list
+    hidden: false
+    default: ''
+  hidden: false
+  default: ''
+- name: review
+  label: Review
+  type: field_group
+  fields:
+  - type: file
+    name: image
+    label: Casino Review Image
+    description: Casino Review Image
+  - name: overview
+    label: Overview
+    type: field_group
+    fields:
+    - name: label
+      label: Overview Title
+      type: text
+      hidden: false
+      default: ''
+      description: Gives a title to the casino overview
+    - name: pros
+      label: Pros
+      type: list
+      hidden: false
+      default: ''
+      description: Review Positive Feedback
+    - name: cons
+      label: Cons
+      type: list
+      hidden: false
+      default: ''
+      description: Review Negative Feedback
+    - name: context
+      label: Overview Short Version
+      type: field_group
+      fields:
+      - name: pros
+        label: Pros
+        type: list
+        hidden: false
+        default: ''
+      - name: cons
+        label: Cons
+        type: list
+        hidden: false
+        default: ''
+      hidden: false
+      default: ''
+      description: Shorter version of the Pros and Cons declared above
+    hidden: false
+    default: ''
+    description: Casino overview feedback
+  hidden: false
+  default: ''
+  description: A review information about the casino.

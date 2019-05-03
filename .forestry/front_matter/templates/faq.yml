@@ -1,0 +1,36 @@
+---
+label: faq
+hide_body: true
+fields:
+- type: field_group
+  label: Frequently Asked Questions
+  name: faq
+  description: Frequently Asked Questions
+  fields:
+  - type: text
+    label: FAQ Heading
+    name: headline
+    description: FAQ Heading
+    config:
+      required: false
+  - type: textarea
+    name: headline_content
+    label: Headline Content
+    description: A few lines of content describing the FAQ section
+    config:
+      wysiwyg: true
+      schema:
+        format: markdown
+  - type: field_group_list
+    name: faq
+    label: Frequently Asked Questions and Answers
+    description: A list of frequently asked questions
+    fields:
+    - type: text
+      name: question
+      label: Question
+      description: A frequently asked question
+    - type: textarea
+      name: answer
+      label: Answer
+      description: An answer to a frequently asked question

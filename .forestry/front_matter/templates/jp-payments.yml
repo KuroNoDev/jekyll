@@ -1,0 +1,61 @@
+---
+label: jp-payments
+hide_body: false
+fields:
+- type: text
+  name: layout
+  label: Layout
+  description: Sets the Page Layout
+  default: jp-payments
+- type: include
+  template: jp-page
+  label: Default
+  name: default
+- type: field_group_list
+  name: how_to_best_methods
+  label: How to find the best methods for your needs
+  fields:
+  - type: file
+    name: image
+    label: Image
+  - type: text
+    name: label
+    label: Label
+  - type: text
+    name: content
+    label: Content
+  - type: color
+    name: color
+    label: Color
+    config:
+      color_format: Hex
+- type: field_group_list
+  name: how_it_works
+  label: How deposits and withdrawal work
+  fields:
+  - type: file
+    name: image
+    label: Image
+  - type: text
+    name: label
+    label: Label
+  - type: text
+    name: content
+    label: Content
+  - type: color
+    name: color
+    label: Color
+    config:
+      color_format: Hex
+- type: field_group_list
+  name: ads
+  label: Ad banners
+  fields:
+  - type: file
+    name: image
+    label: Image
+  - type: text
+    name: url
+    label: Url
+pages:
+- _jp_pages/payments.md

@@ -1,0 +1,25 @@
+---
+label: author
+hide_body: true
+fields:
+- type: field_group
+  name: author
+  label: Author details
+  description: Details about the author
+  fields:
+  - type: text
+    name: image
+    label: Image url
+    description: Url of image
+  - type: text
+    name: head_title
+    label: Card head title
+    description: Title of card head
+  - type: text
+    name: body_title
+    label: Card body title
+    description: Title of card body
+  - type: text
+    name: body_content
+    label: Card body content
+    description: Content of card body

@@ -1,0 +1,48 @@
+---
+label: menus
+hide_body: true
+fields:
+- type: field_group_list
+  label: Header
+  name: header
+  fields:
+  - type: text
+    name: url
+    label: Url
+  - type: text
+    name: title
+    label: Title
+  - type: field_group_list
+    name: sub
+    label: Sub
+    fields:
+    - type: text
+      name: url
+      label: Url
+    - type: text
+      name: title
+      label: Title
+- type: field_group
+  label: Footer
+  name: footer
+  fields:
+  - type: field_group_list
+    label: Categories
+    name: categories
+    fields:
+    - type: text
+      name: url
+      label: Url
+    - type: text
+      name: title
+      label: Title
+  - type: field_group_list
+    label: Pages
+    name: pages
+    fields:
+    - type: text
+      name: url
+      label: Url
+    - type: text
+      name: title
+      label: Title

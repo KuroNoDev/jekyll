@@ -1,0 +1,22 @@
+---
+label: advertisements
+hide_body: false
+fields:
+- type: field_group_list
+  name: channels
+  label: Advertisement Channel
+  description: An advertisement entry
+  fields:
+  - type: text
+    name: label
+    label: Advertisement Label
+    description: Give this advertisement a label.
+  - type: text
+    name: link
+    label: Advertisement Link
+    description: A target link for this advertisement
+  - type: file
+    name: image
+    label: Advertisement Banner/Image
+    description: An image or banner for this image. Please make sure that the image
+      dimensions fit the template's restriction for optimum awesome.

@@ -1,0 +1,26 @@
+---
+label: badge
+hide_body: true
+fields:
+- type: field_group_list
+  name: items
+  label: Items
+  description: Badge Items
+  fields:
+  - type: text
+    name: name
+    label: Badge Name
+    description: Badge Pretty Name
+  - type: text
+    name: label
+    label: Badge Label
+    description: Badge label for queries, replace spaces and special chars with a
+      dash (-).
+  - type: textarea
+    name: description
+    label: Badge Description
+    description: A one or two-liner description, keep it short and concise.
+  - type: file
+    name: image
+    label: Badge Image
+    description: Badge Image, SVG(s) provides better results of crispness.

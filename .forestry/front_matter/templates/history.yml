@@ -1,0 +1,23 @@
+---
+label: History
+hide_body: true
+fields:
+- type: field_group_list
+  name: history
+  label: History
+  description: History timeline
+  fields:
+  - type: file
+    name: image
+    label: Image
+  - type: number
+    name: year
+    label: Year
+  - type: text
+    name: content
+    label: Content
+  - type: color
+    name: color
+    label: Color
+    config:
+      color_format: Hex

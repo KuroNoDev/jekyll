@@ -1,0 +1,88 @@
+---
+label: Casino Review
+hide_body: false
+fields:
+- type: include
+  template: page
+  label: Default
+  name: default
+- type: text
+  name: layout
+  label: Layout
+  description: Sets the Page Layout
+  default: casino-review
+- type: text
+  name: go_folder
+  label: Go Folder
+  description: Go folder link override
+- type: include
+  template: information-tabs
+  label: Information Tabs
+  name: information_tabs
+- type: include
+  template: toplist
+  label: Toplist
+  name: toplist
+- type: field_group_list
+  name: table_cta
+  label: Table CTA collections
+  fields:
+  - type: text
+    name: table_name
+    label: Table Name
+  - type: field_group_list
+    name: fields
+    label: Fields
+    fields:
+    - type: text
+      name: name
+      label: Name
+    - type: text
+      name: value
+      label: Value
+- type: include
+  template: author
+  label: Author
+  name: author
+- type: include
+  template: trivia
+  label: Trivia
+  name: trivia
+- type: include
+  template: faq
+  label: FAQ
+  name: faq
+- type: include
+  template: bottom-collection
+  label: Bottom Collection
+  name: bottom-collection
+- type: field_group
+  name: best_casino
+  label: Best Casino
+  fields:
+  - type: text
+    name: casino
+    label: Casino
+    description: Permalink of the casino
+  - type: text
+    name: headline
+    label: Headline
+    description: Text headline of the middle section
+    default: Das beste
+  - type: text
+    name: highlight
+    label: Highlight
+    description: Highlighted teext content of the middle section
+    default: Live Baccarat Casino
+  - type: text
+    name: content
+    label: Content
+    description: Text content of the middle section
+pages:
+- _casinos/leovegas-casino-review.md
+- _casinos/wunderino-casino-test.md
+- _casinos/cashmio-casino-test.md
+- _casinos/888-casino-erfahrung.md
+- diese-spielbanken-bieten-baccarat-an-casinoliste-im-in-ausland.md
+- _casinos/druckgluck-casino-test-das-beliebteste-casino-deutschlands-im-test.md
+- _casinos/der-mr-play-casino-test-wir-nehmen-den-schnurrbart-unter-die-lupe.md

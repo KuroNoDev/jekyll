@@ -1,0 +1,23 @@
+---
+label: jp-guide
+hide_body: false
+fields:
+- type: text
+  name: layout
+  label: Layout
+  description: Sets the Page Layout
+  default: jp-guide
+- type: include
+  template: jp-page
+  label: Default
+  name: default
+- type: include
+  template: cards
+  label: Cards
+  name: cards
+- type: include
+  template: ads
+  label: Ads
+  name: ads
+pages:
+- _jp_pages/guide.md

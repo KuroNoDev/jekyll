@@ -1,0 +1,89 @@
+---
+label: Guide
+hide_body: false
+fields:
+- type: include
+  template: page
+  label: Default
+  name: default
+- type: include
+  template: toplist
+  label: Toplist
+  name: toplist
+- type: include
+  template: tips
+  label: Tips
+  name: tips
+- type: include
+  template: advanced-tips
+  label: Advanced Tips
+  name: advanced-tips
+- type: field_group
+  name: advanced_tips_second
+  label: Second advanced tips
+  description: A list of advanced tips. Good, neutral or bad
+  fields:
+  - type: list
+    name: good
+    label: good
+  - type: list
+    name: neutral
+    label: neutral
+  - type: list
+    name: bad
+    label: bad
+- type: include
+  template: trivia
+  label: Trivia
+  name: trivia
+- type: include
+  template: faq
+  label: FAQ
+  name: faq
+- type: text
+  name: conclusion_title
+  label: Conclusion title
+  description: Conclusion title
+- type: field_group
+  name: toplist
+  label: Toplist
+  description: Page's toplist details
+  fields:
+  - type: text
+    name: name
+    label: Name
+    description: Label Name
+  - type: file
+    name: image
+    label: Image
+    description: Badge for card
+- type: include
+  template: author
+  label: Author
+  name: author
+- type: text
+  name: conclusion_content
+  label: Conclusion content
+  description: Conclusion content
+- type: boolean
+  name: show_toplist
+  label: Show Toplist
+  description: Show or hide page on toplist cards
+- type: text
+  name: guides_toplist_header
+  label: Guides Toplist Header
+  description: Guides collection title
+- type: include
+  template: bottom-toplist
+  label: Bottom Toplist
+  name: bottom-toplist
+pages:
+- _guides/casino-lizenz.md
+- _guides/der-beste-casino-ratgeber-erleben-sie-das-glucksspiel-mit-stil.md
+- _guides/online-casino-anmeldung-leicht-gemacht-sicher-schnell-zum-spiel.md
+- _guides/online-casino-konto-verifizieren-leicht-gemacht-so-geht-s-ganz-schnell.md
+- _guides/online-casino-bonusbedingungen-leicht-gemacht-boni-effektiv-nutzen.md
+- _guides/online-casino-anmeldung-leicht-gemacht-sicher-schnell-zum-spiel-1.md
+- _guides/online-casino-auszahlung-leicht-gemacht-schnell-gewinne-erhalten.md
+- _guides/online-casino-auszahlung-leicht-gemacht-schnell-gewinne-erhalten-1.md
+- _guides/title.md

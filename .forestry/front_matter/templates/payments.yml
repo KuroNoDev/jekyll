@@ -1,0 +1,25 @@
+---
+label: Payments
+hide_body: false
+fields:
+- type: field_group_list
+  name: items
+  label: Items
+  fields:
+  - type: text
+    label: name
+    name: name
+  - type: text
+    label: Description
+    name: description
+  - type: list
+    label: Pros
+    name: pros
+  - type: list
+    label: Cons
+    name: cons
+  - type: file
+    label: Icon
+    name: icon
+pages:
+- _data/payments.yml

@@ -1,0 +1,14 @@
+---
+label: Ads
+hide_body: true
+fields:
+- type: field_group_list
+  name: ads
+  label: Ad banners
+  fields:
+  - type: file
+    name: image
+    label: Image
+  - type: text
+    name: url
+    label: Url

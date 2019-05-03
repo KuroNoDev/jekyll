@@ -1,0 +1,12 @@
+---
+label: bottom_toplist
+hide_body: false
+fields:
+- type: boolean
+  name: show_bottom_toplist
+  label: Show Bottom Toplist
+  description: Toggles Bottom Toplist visibility
+- type: text
+  name: bottom_toplist_header
+  label: Bottom Toplist Header
+  description: Header for the bottom toplist

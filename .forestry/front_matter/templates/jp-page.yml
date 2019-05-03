@@ -1,0 +1,96 @@
+---
+label: jp-default
+hide_body: false
+fields:
+- type: field_group_list
+  name: meta
+  label: Meta
+  description: Custom Page Meta Tags
+  fields:
+  - type: text
+    name: name
+    label: Name
+    description: Tag name
+  - type: text
+    name: content
+    label: Content
+    description: Tag content
+- type: text
+  name: permalink
+  label: Permalink
+  description: Override the page's default URL by assigning a specific one
+- type: field_group
+  name: related_permalink
+  label: Related Permalink
+  fields:
+  - type: text
+    name: de
+    label: DE
+    default: ''
+- type: text
+  name: title
+  label: Title
+  description: Page Title
+  config:
+    required: true
+- type: textarea
+  label: Meta Description
+  name: description
+  description: 'Meta Page Description, limit it to 120-158 characters. '
+  config:
+    wysiwyg: false
+    schema:
+      format: markdown
+    required: true
+- type: tag_list
+  name: keywords
+  label: Meta Keywords
+  description: Page's Meta Keywords
+- type: text
+  name: headline
+  label: Headline
+  description: Content Headline
+- type: text
+  name: headline_lead
+  label: Headline Lead
+  description: Headline Leading Paragraph
+- type: textarea
+  name: headline_content
+  label: Headline Content
+  description: Content to the headline
+  config:
+    wysiwyg: true
+    schema:
+      format: markdown
+- type: field_group_list
+  name: cards_links
+  label: Cards TOC
+  description: Colored TOC Cards
+  fields:
+  - type: file
+    name: image
+    label: Image
+  - type: text
+    name: label
+    label: Label
+  - type: color
+    name: color
+    label: Color
+    config:
+      color_format: Hex
+  - type: text
+    name: url
+    label: Url
+- type: include
+  template: breadcrumb
+  label: Breadcrumb
+  name: breadcrumb
+  description: Breadcrumb Component Option
+- type: include
+  template: trivia
+  label: Trivia
+  name: trivia
+- type: include
+  template: faq
+  label: FAQ
+  name: faq

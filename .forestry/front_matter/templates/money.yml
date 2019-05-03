@@ -1,0 +1,91 @@
+---
+label: Money
+hide_body: false
+fields:
+- type: include
+  template: page
+  label: Default
+  name: default
+- type: text
+  name: layout
+  label: Layout
+  description: Sets the Page Layout
+  default: money
+- type: list
+  name: collection_badges_filter
+  label: Collection Badges Filter
+  description: filter what casinos will show by specifying badges
+- type: include
+  template: toplist
+  label: Toplist
+  name: toplist
+- type: include
+  template: trivia
+  label: Trivia
+  name: trivia
+- type: include
+  template: author
+  label: Author
+  name: author
+- type: include
+  template: faq
+  label: FAQ
+  name: faq
+- type: include
+  template: bottom-toplist
+  label: Bottom Toplist
+  name: bottom-toplist
+- type: field_group_list
+  name: variants_collection
+  label: Variants Collection
+  description: Variants cards collection
+  fields:
+  - type: text
+    name: title
+    label: Title
+    description: Title of card
+  - type: text
+    name: label
+    label: Label
+    description: Label for image
+  - type: text
+    name: icon
+    label: Icon
+    description: Icon of card
+  - type: text
+    name: description
+    label: Description
+    description: Description of card
+- type: field_group
+  name: best_casino
+  label: Best Casino
+  fields:
+  - type: text
+    name: casino
+    label: Casino
+    description: Permalink of the casino
+  - type: text
+    name: headline
+    label: Headline
+    description: Text headline of the middle section
+    default: Das beste
+  - type: text
+    name: highlight
+    label: Highlight
+    description: Highlighted teext content of the middle section
+    default: Live Baccarat Casino
+  - type: text
+    name: content
+    label: Content
+    description: Text content of the middle section
+pages:
+- _money/uberweisung.md
+- _money/vip-bonus.md
+- _money/paysafecard.md
+- _money/iphone-casinos.md
+- _money/mastercard-casinos.md
+- _money/mobile-casino-fur-baccarat-finden-sie-hier-die-besten-handy-casinos.md
+- _money/mit-echtgeld-baccarat-spielen-gewinnen-ihr-guide-zum-erfolg-in-2018.md
+- _money/in-vip-casinos-baccarat-spielen-das-sind-die-top-5-high-roller-casinos.md
+- _money/im-online-casino-mit-paypal-zahlen-leicht-gemacht-so-funktioniert-s.md
+- _money/title-here.md

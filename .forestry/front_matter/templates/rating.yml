@@ -1,0 +1,53 @@
+---
+label: rating
+hide_body: true
+fields:
+- type: text
+  label: Rating Title
+  name: title
+  description: Rating Pretty Title
+- type: text
+  name: label
+  label: Rating Label
+  description: This key is used for querying rating entry.
+- type: textarea
+  label: Rating Content
+  name: content
+  description: Rating content and other information.
+  config:
+    wysiwyg: true
+    schema:
+      format: markdown
+- type: field_group_list
+  label: Rating Items
+  name: rating_items
+  description: A list of criteria for judging the casinos.
+  fields:
+  - type: text
+    name: title
+    label: Title
+    description: Rating Title
+  - type: text
+    label: Rating Label
+    name: label
+    description: Rating label, please don't add space or special characters (this
+      field is use for querying the badge information).
+  - type: textarea
+    name: description
+    label: Rating Description
+    description: Rating's one or two-liner description. Short and concise.
+  - type: textarea
+    name: content
+    label: Rating Content
+    description: Rating's s detailed information and or content.
+    config:
+      wysiwyg: true
+      schema:
+        format: markdown
+  - type: file
+    label: Rating Icon
+    name: icon
+    description: Rating icon image
+  - type: text
+    name: button_label
+    label: Rating Button Label
